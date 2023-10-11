@@ -13,21 +13,29 @@ public class ButtonPanel extends JPanel {
         this.setPreferredSize(new Dimension(400,60));
         this.setBackground(Colors.TITLEBAR.getColor());
 
-        clear = new JButton();
-        clear.setBorder(emptyBorder);
-        clear.setFont(Fonts.BITSTREAM.getFont());
-        clear.setPreferredSize(new Dimension(100,40));
-        clear.setBackground(Colors.TITLEBAR.getColor());
-        clear.setIcon(new ImageIcon("ToDoList/src/img/addTask1.png"));
-        this.add(clear);
-
         addTask = new JButton();
         addTask.setBorder(emptyBorder);
         addTask.setFont(Fonts.BITSTREAM.getFont());
-        addTask.setPreferredSize(new Dimension(100,40));
+        addTask.setPreferredSize(new Dimension(120,40));
         addTask.setBackground(Colors.TITLEBAR.getColor());
         addTask.setIcon(new ImageIcon("ToDoList/src/img/addTask1.png"));
         this.add(addTask);
 
+        clear = new JButton();
+        clear.setBorder(emptyBorder);
+        clear.setFont(Fonts.BITSTREAM.getFont());
+        clear.setPreferredSize(new Dimension(215,40));
+        clear.setBackground(Colors.TITLEBAR.getColor());
+        clear.setIcon(new ImageIcon("ToDoList/src/img/clearCompletedTasks1.png"));
+        this.add(clear);
+
+    }
+
+    public JButton getAddTask() {
+        return addTask;
+    }
+
+    public JButton getClear() {
+        return clear;
     }
 }
