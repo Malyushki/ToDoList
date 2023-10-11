@@ -17,7 +17,7 @@ public class Frame extends JFrame {
         buttonPanel = new ButtonPanel();
         this.add(titleBar, BorderLayout.NORTH);
 
-
+        this.add(buttonPanel,BorderLayout.SOUTH);
 
         revalidate();
     }
