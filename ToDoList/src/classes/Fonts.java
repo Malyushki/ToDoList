@@ -3,7 +3,7 @@ package classes;
 import java.awt.*;
 
 public enum Fonts {
-    BITSTREAM(new Font("Bitstream Vera Sans Mono", Font.BOLD, 25));
+    BITSTREAM(new Font("Bitstream Vera Sans Mono", Font.BOLD, 20));
 
     private Font font;
 

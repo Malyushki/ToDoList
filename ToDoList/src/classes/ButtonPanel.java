@@ -18,7 +18,7 @@ public class ButtonPanel extends JPanel {
         addTask.setFont(Fonts.BITSTREAM.getFont());
         addTask.setPreferredSize(new Dimension(120,40));
         addTask.setBackground(Colors.TITLEBAR.getColor());
-        addTask.setIcon(new ImageIcon("ToDoList/src/img/addTask1.png"));
+        addTask.setIcon(new ImageIcon("src/img/addTask1.png"));
         this.add(addTask);
 
         clear = new JButton();
@@ -26,7 +26,7 @@ public class ButtonPanel extends JPanel {
         clear.setFont(Fonts.BITSTREAM.getFont());
         clear.setPreferredSize(new Dimension(215,40));
         clear.setBackground(Colors.TITLEBAR.getColor());
-        clear.setIcon(new ImageIcon("ToDoList/src/img/clearCompletedTasks1.png"));
+        clear.setIcon(new ImageIcon("src/img/clearCompletedTasks1.png"));
         this.add(clear);
 
     }

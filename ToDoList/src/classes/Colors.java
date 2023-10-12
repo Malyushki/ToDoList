@@ -4,9 +4,9 @@ import java.awt.*;
 
 public enum Colors {
     BACKGROUND(new Color(244, 211, 94)),
-    TEXT(new Color(25, 25, 25)),
-    BUTTON(new Color(0, 108, 103)),
-    TITLEBAR(new Color(0, 184, 174));
+    TITLEBAR(new Color(54, 133, 140)),
+    DONETASK(new Color(27, 154, 132)),
+    FONT_COLOR(new Color(255, 255, 255));
 
     private Color color;
 

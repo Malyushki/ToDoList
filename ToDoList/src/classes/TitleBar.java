@@ -5,14 +5,15 @@ import java.awt.*;
 public class TitleBar extends JPanel{
 
     public TitleBar() {
-        this.setPreferredSize(new Dimension(400,80));
+        this.setPreferredSize(new Dimension(400,160));
         this.setBackground(Colors.TITLEBAR.getColor());
 
 
-        JLabel titleText = new JLabel("To Do List");
-        titleText.setPreferredSize(new Dimension(200,80));
-        titleText.setFont(Fonts.BITSTREAM.getFont());
+        JLabel titleText = new JLabel();
+        titleText.setPreferredSize(new Dimension(400,160));
+        titleText.setIcon(new ImageIcon("src/img/todoList.png"));
         titleText.setHorizontalAlignment(JLabel.CENTER);
+
 
         this.add(titleText);
 

@@ -1,6 +1,7 @@
 package classes;
 
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicBorders;
 import java.awt.*;
 
 public class Task extends JPanel {
@@ -12,25 +13,29 @@ public class Task extends JPanel {
 
     public Task() {
         this.setPreferredSize(new Dimension(40,20));
-        this.setBackground(Color.LIGHT_GRAY);
-
+        this.setBackground(Colors.TITLEBAR.getColor());
         this.setLayout(new BorderLayout());
         isCompleted = false;
         index = new JLabel();
         index.setPreferredSize(new Dimension(20,20));
         index.setHorizontalAlignment(JLabel.CENTER);
+        index.setFont(Fonts.BITSTREAM.getFont());
+        index.setForeground(Colors.FONT_COLOR.getColor());
         this.add(index,BorderLayout.WEST);
 
         taskName = new JTextField("Your task here");
         taskName.setBorder(BorderFactory.createEmptyBorder());
-        taskName.setBackground(Color.GRAY);
+        taskName.setBackground(Colors.TITLEBAR.getColor());
+        taskName.setFont(Fonts.BITSTREAM.getFont());
+        taskName.setForeground(Colors.FONT_COLOR.getColor());
 
         this.add(taskName,BorderLayout.CENTER);
 
-        done = new JButton("done");
+        done = new JButton();
         done.setPreferredSize(new Dimension(40,20));
+        done.setIcon(new ImageIcon("src/img/done1.png"));
         done.setBorder(BorderFactory.createEmptyBorder());
-
+        done.setBackground(Colors.BACKGROUND.getColor());
         this.add(done,BorderLayout.EAST);
     }
 
@@ -45,8 +50,9 @@ public class Task extends JPanel {
     }
 
     public void changeState(){
-        this.setBackground(Color.GREEN);
-        taskName.setBackground(Color.GREEN);
+        this.setBackground(Colors.DONETASK.getColor());
+        taskName.setBackground(Colors.DONETASK.getColor());
+        done.setIcon(new ImageIcon("src/img/done2.png"));
         isCompleted = true;
     }
 
