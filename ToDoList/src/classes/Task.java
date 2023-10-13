@@ -33,7 +33,7 @@ public class Task extends JPanel {
 
         done = new JButton();
         done.setPreferredSize(new Dimension(40,20));
-        done.setIcon(new ImageIcon("src/img/done1.png"));
+        done.setIcon(new ImageIcon(getClass().getClassLoader().getResource("done1.png")));
         done.setBorder(BorderFactory.createEmptyBorder());
         done.setBackground(Colors.BACKGROUND.getColor());
         this.add(done,BorderLayout.EAST);
@@ -52,7 +52,7 @@ public class Task extends JPanel {
     public void changeState(){
         this.setBackground(Colors.DONETASK.getColor());
         taskName.setBackground(Colors.DONETASK.getColor());
-        done.setIcon(new ImageIcon("src/img/done2.png"));
+        done.setIcon(new ImageIcon(getClass().getClassLoader().getResource("done2.png")));
         isCompleted = true;
     }
 

@@ -11,7 +11,7 @@ public class TitleBar extends JPanel{
 
         JLabel titleText = new JLabel();
         titleText.setPreferredSize(new Dimension(400,160));
-        titleText.setIcon(new ImageIcon("src/img/todoList.png"));
+        titleText.setIcon(new ImageIcon(getClass().getClassLoader().getResource("todoList.png")));
         titleText.setHorizontalAlignment(JLabel.CENTER);
 
 

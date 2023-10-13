@@ -1,6 +1,6 @@
 package classes;
 
-public class Main {
+public class ToDoList {
     public static void main(String[] args) {
         new Frame();
     }
